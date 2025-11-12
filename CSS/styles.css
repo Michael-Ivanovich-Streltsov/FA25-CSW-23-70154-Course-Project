@@ -18,14 +18,40 @@
   --color-accent: #007bff; /* An accent color for links/buttons */
 
   /* Define your fonts here */
-  --font-heading: Georgia, serif;
-  --font-body: Arial, sans-serif;
+  --font-heading: 'TF2';
+  --font-body: 'TF2Build';
+  --font-footer: 'TF2secondary';
 }
 
+/*Custom Fonts*/
+  @font-face {
+    font-family: 'TF2';
+    src: url(/fonts/TF2.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TF2Build';
+    src: url(/fonts/TF2Build.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TF2secondary';
+    src: url(/fonts/TF2secondary.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
 
 /* ------------------- */
 /* Basic Body Styles   */
 /* ------------------- */
+/*makes header and foter not epand forever*/
+html, body {
+  overflow-x: hidden;
+}
+
+
 body {
   font-family: var(--font-body);
   background-color: var(--color-secondary);
@@ -33,16 +59,22 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  /*magicaly centers the midle bit*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ------------------- */
 /* Layout & Sections   */
 /* ------------------- */
 header {
-  background-color: var(--color-primary);
+  background: #395C78;
+  background: linear-gradient(90deg,rgba(57, 92, 120, 1) 25%, rgba(157, 49, 47, 1) 75%);
   color: var(--color-secondary);
   padding: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 nav ul {
@@ -71,6 +103,7 @@ main {
 
 section {
   margin-bottom: 20px;
+
 }
 
 /* Example of a border for a block area */
@@ -88,9 +121,13 @@ hr {
 
 footer {
   text-align: center;
-  
-
-
+  background: #395C78;
+  background: linear-gradient(90deg,rgba(57, 92, 120, 1) 25%, rgba(157, 49, 47, 1) 75%);
+  color: var(--color-secondary);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 
