@@ -168,14 +168,12 @@ a {
   }
 
 /* Visited link */
-a:visited {
-  color: #800080; /* Change this to any color you want */
-}
 
 /* Mouse over link */
 a:hover {
   color: #000000;
 }
+
 
 
 
