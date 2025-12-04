@@ -93,6 +93,7 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 10px;
+  background-color: black;
 }
 
 main {
@@ -176,5 +177,6 @@ a:visited {
 a:hover {
   color: #000000;
 }
+
 
 
