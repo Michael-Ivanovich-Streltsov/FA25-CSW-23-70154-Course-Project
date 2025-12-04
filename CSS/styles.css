@@ -174,5 +174,6 @@ a:visited {
 
 /* Mouse over link */
 a:hover {
-  color: red;
+  color: black;
 }
+
