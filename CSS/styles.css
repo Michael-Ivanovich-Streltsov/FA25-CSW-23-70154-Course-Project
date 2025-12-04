@@ -166,3 +166,13 @@ a {
   main {
       padding: 10px;
   }
+
+/* Visited link */
+a:visited {
+  color: purple; /* Change this to any color you want */
+}
+
+/* Mouse over link */
+a:hover {
+  color: red;
+}
